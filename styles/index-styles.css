@@ -256,4 +256,20 @@ footer p {
     .hero-section {
         padding: 4rem 1rem;
     }
+
+    .navbar-user {
+    color: #666;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    }
+
+    .navbar-user i {
+    color: #667eea;
+    margin-right: 0.3rem;
+    }
+
+    .navbar .btn-custom {
+    align-self: auto;
+    padding: 0.5rem 1.2rem;
+    }
 }
