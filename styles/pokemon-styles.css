@@ -1,0 +1,56 @@
+:root{
+  --bg-1: #0f1724;
+  --bg-2: #08263a;
+  --accent: #2fb8ff;
+  --accent-dark: #0b6b9a;
+  --card-bg: rgba(255,255,255,0.04);
+  --glass: rgba(255,255,255,0.03);
+  --text: #e6f0ff;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg,var(--bg-1),var(--bg-2));
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+.hero{
+  padding:3rem 1rem;
+  text-align:center;
+  background: linear-gradient(90deg, rgba(47,184,255,0.12), rgba(11,107,154,0.06));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.hero h1{margin:0;font-size:2rem}
+.hero .subtitle{margin-top:.5rem;color:rgba(230,240,255,0.8)}
+
+.container{max-width:960px;margin:2rem auto;padding:1rem}
+section{margin-bottom:1.5rem}
+h2{margin-top:0;color:var(--accent)}
+
+.why ul{margin:0;padding-left:1.05rem}
+.why li{margin:.5rem 0}
+
+.greninja-grid{display:grid;grid-template-columns:1fr 260px;gap:1rem;align-items:start}
+.greninja-info p{line-height:1.5}
+.greninja-info ul{padding-left:1rem}
+
+.greninja-card{
+  background: linear-gradient(180deg, rgba(47,184,255,0.06), var(--glass));
+  padding:1rem;border-radius:12px;text-align:center;border:1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+.greninja-img{width:100%;height:auto;max-width:220px;border-radius:10px;display:block;margin:0 auto}
+.tagline{font-style:italic;color:rgba(230,240,255,0.9);margin-top:.6rem}
+
+.final p{margin:0}
+
+.site-footer{padding:1rem;text-align:center;color:rgba(230,240,255,0.7);border-top:1px solid rgba(255,255,255,0.03)}
+
+@media (max-width:720px){
+  .greninja-grid{grid-template-columns:1fr;}
+  .greninja-silhouette{font-size:3rem}
+  .hero{padding:2rem}
+}
